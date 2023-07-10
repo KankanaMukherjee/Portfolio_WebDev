@@ -1,0 +1,308 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* background-color: #d2edfad8; */
+    background-image: linear-gradient(to right, #b6fbff, #83a4d4);
+}
+
+header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 0px rgba(84, 114, 145, 0.785);
+    /* background-color: rgba(177, 181, 245, 0.584); */
+    background-size: 100%;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+section {
+    margin: 10px;
+}
+
+h2 {
+    padding-top: 10px;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+h3{
+  padding-top: 25px;
+  font-size: 1.6rem;;
+  font-style: bold;
+}
+
+h4{
+  text-align: center;
+  padding-top: 25px;
+  font-size: 1.6rem;;
+  font-style: bold;
+}
+
+.medicine-item {
+    
+    display: inline-block;
+    flex-basis: calc(20% - 10px);
+    padding-right: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.medicine-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 10px;
+    padding-right: 140px;
+}
+
+.add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-section {
+    position: relative;
+    height: 500px;
+
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.medscape.com/thumbnail_library/dt_200210_anxiety_word_pills_800x450.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #121111;
+    background-color: rgba(255, 247, 247, 0.742); /* Adjust the alpha value (0.5) for the desired transparency */
+    padding: 20px;
+}
+
+form {
+  margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 6px; /* Add border radius */
+    background-color: rgba(255, 247, 247, 0.575);
+    border-top: 15px solid #e0d9d997;
+    border-bottom: 15px solid #e0d9d997;
+    border-left: 15px solid #fffdfdd6;
+    border-right: 15px solid #ede6e6f4;
+    padding: 0px 20px 35px 40px;
+}
+
+label {
+    font-weight: bold;
+    
+}
+
+input {
+    padding: 5px;
+}
+
+button[type="submit"] {
+    padding: 8px 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-self: left;
+}
+
+
+.contact-section {
+    text-align: center;
+    font-style: cursive;
+    margin: 20px;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 5px;
+    
+  }
+  
+  .contact-section u {
+    font-style: italic;
+    text-decoration: none;
+    padding-bottom: 60px;
+  }
+  
+
+
+
+/* Add this CSS code to your styles.css file */
+
+.checkout-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .checkout-btn:hover {
+    background-color: darkgreen;
+  }
+
+ 
+  
+
+  #prescription-reading {
+    margin: 30px;
+    padding: 0px 20px 20px 50px;
+    /* background-color: rgb(0, 101, 101); */
+    background-color: rgba(234, 225, 225, 0.475);
+    width: auto;
+    /* background-color: rgba(137, 196, 244, 0.482); */
+    border-top: 15px solid #e0d9d997;
+    border-bottom: 15px solid #e0d9d997;
+    border-left: 15px solid #fffdfdd6;
+    border-right: 15px solid #ede6e6f4;
+    
+  }
+  
+
+  #prescription-result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input#prescription-input{
+    padding-left: 0px;
+  }
+  
+  #medicine-list {
+    margin-bottom: 20px;
+  }
+  
+  #medicine-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #medicine-list li {
+    margin-bottom: 10px;
+  }
+  
+  #order-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #order-button:hover {
+    background-color: #555;
+  }
+
+
+    
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .form1-group {
+      margin: 10px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      border: 1px solid #ccc; /* Add border */
+      border-radius: 6px; /* Add border radius */
+      background-color: rgba(255, 247, 247, 0.575);
+      border-top: 15px solid #e0d9d997;
+      border-bottom: 15px solid #e0d9d997;
+      border-left: 15px solid #fffdfdd6;
+      border-right: 15px solid #ede6e6f4;
+      padding: 20px 40px 35px 40px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  /* input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  } */
+
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
